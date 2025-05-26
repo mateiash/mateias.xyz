@@ -1,4 +1,40 @@
 body {
-    background-color: antiquewhite;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal p {
+    margin: 0%;
+    font-size: larger;
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.6em;
+    background-color: #33FF33;
+    animation: blink 1s step-start 0s infinite;
+    margin-left: 0.1em;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.prompt::before{
+    color:#33FF33;
+    content: "David A. Mateis@mateias.xyz:~$ ";
+}
+
+
+.prompt {
+    font-weight: bold;
 }
