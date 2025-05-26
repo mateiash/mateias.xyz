@@ -2,6 +2,8 @@ body {
     background-color: black;
     color: green;
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    font-size: larger;
 }
 
 .terminal {
@@ -12,7 +14,8 @@ body {
 
 .terminal p {
     margin: 0%;
-    font-size: larger;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .cursor {
@@ -38,3 +41,49 @@ body {
 .prompt {
     font-weight: bold;
 }
+
+.auto-complete{
+    padding-left: 26rem;
+}
+
+.terminal-link{
+    color: #003d00;
+    text-decoration: none;
+}
+
+.terminal-link:hover{
+    color: #33FF33;
+}
+
+.vim-bar #vim-bar-1 {
+    background-color: white;
+    color: black;
+}
+
+.vim-bar #vim-bar-2 {
+    background-color: black;
+    color: white;
+}
+
+.vim-bar a {
+    color: rgb(97, 97, 97);
+    text-decoration: none;
+}
+
+.vim-bar a:hover {
+    color: white;
+}
+
+.vim-bar p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 5px;
+}
+
+.vim-bar{
+    position: fixed;
+min-width: 100%;
+bottom: 0;
+margin: 0;
+}
+
