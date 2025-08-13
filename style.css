@@ -46,7 +46,7 @@ body {
 
 .prompt::before{
     color: var(--prompt-color);
-    content: "David A. Mateiș@mateias.xyz:~$ ";
+    content: "david@mateias.xyz:~$ ";
 }
 
 
