@@ -1,14 +1,26 @@
+:root {
+    --bg-color: #000000;
+    --term-color: #00c700;
+    --term-color-clickable : #006e00;
+    --prompt-color : #33FF33;
+}
+
 body {
-    background-color: black;
-    color: green;
+    background-color: var(--bg-color);
+    color: var(--term-green);
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    font-size: larger;
+    font-size: x-large; 
+}
+
+.ascii-art-title {
+    font-size: 1.75vw;
+    font-weight: bold;
 }
 
 .terminal {
-    background-color: black;
-    color: green;
+    background-color: var(--bg-color);
+    color: var(--term-color);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -21,7 +33,7 @@ body {
 .cursor {
     display: inline-block;
     width: 0.6em;
-    background-color: #33FF33;
+    background-color: var(--prompt-color);
     animation: blink 1s step-start 0s infinite;
     margin-left: 0.1em;
 }
@@ -33,8 +45,8 @@ body {
 }
 
 .prompt::before{
-    color:#33FF33;
-    content: "David A. Mateis@mateias.xyz:~$ ";
+    color: var(--prompt-color);
+    content: "David A. Mateiș@mateias.xyz:~$ ";
 }
 
 
@@ -42,33 +54,36 @@ body {
     font-weight: bold;
 }
 
+.auto-complete {
+    font-size: 26x;
+}
 
 .terminal-link{
-    color: #003d00;
+    color: var(--term-color-clickable);
     text-decoration: none;
 }
 
 .terminal-link:hover{
-    color: #33FF33;
+    color: var(--prompt-color);
 }
 
 .vim-bar #vim-bar-1 {
-    background-color: white;
-    color: black;
+    background-color: var(--term-color);
+    color: var(--bg-color);
 }
 
 .vim-bar #vim-bar-2 {
-    background-color: black;
+    background-color: var(--bg-color);
     color: white;
 }
 
 .vim-bar a {
-    color: rgb(97, 97, 97);
+    color: var(--term-color-clickable);
     text-decoration: none;
 }
 
 .vim-bar a:hover {
-    color: white;
+    color: var(--prompt-color);
 }
 
 .vim-bar p{
