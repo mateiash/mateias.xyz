@@ -86,6 +86,7 @@ body {
 
 .vim-bar a:hover {
     color: var(--prompt-color);
+    cursor: crosshair;
 }
 
 .vim-bar p{
